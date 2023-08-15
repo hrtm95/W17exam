@@ -11,7 +11,7 @@ namespace W17exam.Model
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer("YourConnectionString");
+            optionsBuilder.UseSqlServer("server=.;database=Library;user id=sa;password=123;");
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
